@@ -48,5 +48,5 @@ qualification int
 
 ALTER TABLE lecturer ADD CONSTRAINT surname
     CHECK (regexp_like(surname, 
-	           '@[a-z0-9_-]+'));
+	           '^([a-z0-9_-]+)$);
 
