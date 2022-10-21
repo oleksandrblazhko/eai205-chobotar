@@ -41,12 +41,12 @@ id_lecturer int references lecturer(id_lecturer) ON DELETE CASCADE
 
 CREATE TABLE lecturer(
 id_lecturer SERIAL PRIMARY KEY,
-surname char,
+surname char(20),
 name char,
 qualification int
 );
 
 ALTER TABLE lecturer ADD CONSTRAINT surname
     CHECK (regexp_like(surname, 
-	           '^([a-z0-9_-]+)$);
+	           '^([a-z0-9_-]+)$');
 
