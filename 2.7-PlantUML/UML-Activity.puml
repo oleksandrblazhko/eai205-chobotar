@@ -1,21 +1,21 @@
 @startuml
 
-title Concept of Classes Diagram 
+title Deployment for Information System
+left to right direction
 
-Class Consumer
-Class Information
-Class Courses
-Class Psychological_health
+node "<<Настільний комп'ютер>>" as dk {
+  node "<<OС Windows, OС Linux>>" {
+    node "<<Веб-навігатор>>" {
+      component [.js (Angular)]
+    }
+  }
+}
 
+interface Клавіатура
+interface Маніпулятор_миша
 
-Information"*" <-- "*"Consumer : receives 
+Клавіатура -- dk
 
-Courses"*" --o "1"Information 
-
-Psychological_health"*" --o "1"Consumer 
-
-Psychological_health"*" --> "1"Courses : provides 
-
-
+Маніпулятор_миша -- dk
 
 @enduml
