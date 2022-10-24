@@ -15,8 +15,6 @@ entity user {
 
 }
 
-
-
 entity water {
   (PK)id_water_result
   --
@@ -58,11 +56,10 @@ entity lecturer {
   qualification
 }
 
-
+course --{ Information
 user --{ course
 water --{ user
 mental_health --{ user
-course --{ Information
 lecturer --{ course
 
 @enduml
