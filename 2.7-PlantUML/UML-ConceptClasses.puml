@@ -1,1 +1,21 @@
+@startuml
 
+title Concept of Classes Diagram 
+
+Class User
+Class Information
+Class Courses
+Class Psychological_health
+
+
+Information"*" <-- "*"User : receives 
+
+Courses"*" --o "1"Information 
+
+Psychological_health"*" --o "1"User 
+
+Psychological_health"*" --> "1"Courses : provides 
+
+
+
+@enduml
