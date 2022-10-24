@@ -62,7 +62,7 @@ entity lecturer {
 user --{ course
 water --{ user
 mental_health --{ user
-course --{ information
+course --{ Information
 lecturer --{ course
 
 @enduml
