@@ -1,0 +1,65 @@
+@startuml
+title Relation Schema
+hide circle
+
+entity user {
+  (PK)id_user
+  --
+  nickname
+  password
+  phone_number
+  mail
+  age
+  (FK) id_psychically_result
+  (FK) id_water_result
+
+}
+
+entity water {
+  (PK)id_water_result
+  --
+  amount
+  time
+  date
+}
+
+entity mental_health {
+  (PK)id_psychically_result
+  --
+  time
+  date
+}
+
+entity Information {
+  (PK)id_information
+  --
+  video
+  news
+  articles
+  (FK)id_course
+}
+
+entity course {
+  (PK)id_course
+  --
+  description
+  
+(FK)id_user
+(FK)id_lecturer
+}
+
+entity lecturer {
+  (PK)id_lecturer
+  --
+  surname 
+  name
+  qualification
+}
+
+course --{ Information
+user --{ course
+water --{ user
+mental_health --{ user
+lecturer --{ course
+
+@enduml
