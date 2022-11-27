@@ -1,11 +1,11 @@
 package com.company.water;
 
 public class Health {
-    private int psychological_state; // псигологічний стан людини
-    private User human_health; //користувач
-    private int emotional_condition; // емоційний стан людини
-    private String data; // дата заповнення
-    private Сourses course; // поточний курс на якому перебуває людина
+    private int psychological_state; 
+    private User human_health; 
+    private int emotional_condition; 
+    private String data; 
+    private Сourses course; 
 
     
     
