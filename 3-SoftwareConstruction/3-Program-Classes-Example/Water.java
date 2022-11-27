@@ -28,7 +28,7 @@ public class Water {
 
     @Override
     public String toString() {
-        return "Sleep{" +
+        return "Water{" +
                 "water_quality=" + water_quality +
                 ", amount_water=" + amount_water +
                 ", data=" + data +
