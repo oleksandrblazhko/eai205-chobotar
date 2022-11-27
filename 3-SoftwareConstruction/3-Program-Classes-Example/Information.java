@@ -1,11 +1,11 @@
 package com.company.water;
 
 public class Info {
-    private String[] video; // ссилки на інформаційні відео
-    private String[] articles; // ссилки на інформаційні статті
-    private String[] news; // новини сайту
-    private String support; // контакти підтримки сайту
-    private String[] courses; // інормація про курси на сайті
+    private String[] video; 
+    private String[] articles; 
+    private String[] news; 
+    private String support; 
+    private String[] courses; 
 
 
     public String[] viewVideo(){
